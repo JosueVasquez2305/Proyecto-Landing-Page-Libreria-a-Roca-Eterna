@@ -433,3 +433,15 @@ if (typeof window !== 'undefined') {
    6. EXPORTS (módulo ES — para testing y reutilización)
    ================================================================ */
 export { CONFIG, buildWhatsAppUrl, renderCategoryCards, validateRequired, escapeHtml, getFooterYear };
+
+const themeBtn = document.getElementById('theme-toggle');
+const themeIcon = themeBtn.querySelector('.theme-icon');
+
+themeBtn.addEventListener('click', () => {
+  // Alterna la clase en el body
+  document.body.classList.toggle('dark-mode');
+  
+  // Cambia el icono de Luna a Sol según el estado
+  const isDark = document.body.classList.contains('dark-mode');
+  themeIcon.textContent = isDark ? '☀️' : '🌙';
+});
