@@ -796,10 +796,33 @@ a:hover {
   border: 0;
 }
 
-/* Modo Oscuro Automático */
+/* --- MODO OSCURO (Roca Eterna) --- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #121212;
-    --color-text: #f4f4f4;
+    /* Fondos: Fondo general muy oscuro y tarjetas con un paso de elevación */
+    --color-bg:             #0F141C;  /* Azul noche profundo (remplaza el blanco cálido) */
+    --color-surface:        #182232;  /* Azul/gris elevado para tarjetas, About Us y formulario */
+    
+    /* Textos: Suaves para lectura nocturna sin encandilar */
+    --color-text:           #E8ECF2;  /* Blanco suave con toque frío */
+    --color-text-muted:     #A0ABC0;  /* Gris claro descriptivo */
+    
+    /* Marcas y acentos: Ajustados para resaltar sobre fondos oscuros */
+    --color-primary:        #2E9FAE;  /* Usamos el Turquesa como primario para que resalte en nav/botones */
+    --color-primary-dark:   #247F8C;  
+    --color-secondary:      #3A608F;  /* Azul marino adaptado para elementos secundarios */
+    --color-secondary-dark: #2B496E;  
+    
+    /* Botones de acción y detalles */
+    --color-accent:         #F0B038;  /* Ámbar ligeramente más brillante para legibilidad */
+    --color-accent-dark:    #E8A020;  
+    
+    /* Bordes y separadores */
+    --color-border:         #2A384D;  /* Borde sutil para delimitar secciones */
+
+    /* Sombras: En modo oscuro las sombras son más oscuras para mantener la profundidad */
+    --shadow-sm:  0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.5);
+    --shadow-lg:  0 8px 24px rgba(0, 0, 0, 0.6);
   }
 }
