@@ -799,7 +799,7 @@ a:hover {
 /* Modo Oscuro Automático */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #121212;
-    --text-color: #f4f4f4;
+    --color-bg: #121212;
+    --color-text: #f4f4f4;
   }
 }
