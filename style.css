@@ -831,3 +831,8 @@ body.dark-mode {
 .theme-toggle-btn:hover {
   background-color: var(--color-surface);
 }
+
+body.dark-mode #header {
+  background-color: #0a0e14;
+  border-bottom: 1px solid var(--color-border);
+}
