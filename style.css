@@ -836,3 +836,13 @@ body.dark-mode #header {
   background-color: #0a0e14;
   border-bottom: 1px solid var(--color-border);
 }
+
+/* Corrección de contraste para los enlaces del nav en Modo Oscuro */
+body.dark-mode .nav-links li a {
+  color: #E8ECF2; /* Texto claro de alto contraste */
+}
+
+body.dark-mode .nav-links li a:hover {
+  color: var(--color-primary); /* Turquesa encendido al pasar el cursor */
+  background-color: rgba(255, 255, 255, 0.05);
+}
